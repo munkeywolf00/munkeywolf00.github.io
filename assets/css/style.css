@@ -76,8 +76,6 @@ table {
 }
 
 img {
-  /* display: block;
-  vertical-align: middle; */
   max-width: 100%;
   height: auto;
 }
@@ -377,26 +375,25 @@ footer .socials a img {
   padding: .6rem;
   border-bottom: 2px solid var(--table-border);
   text-align: left;
- }
+}
  
- .stacks-table td {
+.stacks-table td {
    padding: .9rem;
    border-bottom: 2px solid var(--table-border);
- }
+}
 
- .tech-links {
+.tech-links {
   display: flex;
   align-items: center;
   gap: .5rem;
   min-height: 3rem;
   flex-wrap: wrap;
- }
+}
 
- .tech-links a {
-  /* min-height: 2.5rem; */
+.tech-links a {
   max-height: 2.5rem;
   color: var(--table-font-color);
- }
+}
 
  /* Jokes */
 .jokes-container {
@@ -415,7 +412,7 @@ footer .socials a img {
   font-weight: bold;
   font-size: 2rem;
   font-family: MontserratBold;
- }
+}
 
 .jokes-content {
   display: flex;
@@ -423,33 +420,33 @@ footer .socials a img {
   align-items: center;
   gap: 4rem;
   font-size: 1.5rem;
- }
+}
 
- .joke-img {
+.joke-img {
   border-radius: 1rem;
- }
+}
 
  /*  About  */
 .about-container {
   margin-block: 5rem;
 }
 
- .about {
+.about {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3rem;
- }
+}
 
- .about-left {
+.about-left {
   width: 480px;
   max-width: 480px;
   display: flex;
   align-items: center;
   justify-content: center;
- }
+}
 
- .about-right {
+.about-right {
   width: 480px;
   max-width: 480px;
   display: flex;
@@ -457,61 +454,109 @@ footer .socials a img {
   justify-content: center;
   gap: 1.5rem;
   flex-direction: column;
- }
+}
 
- .about-right h2 {
+.about-right h2 {
   font-weight: bold;
   font-size: 3rem;
- }
+}
 
- .about-right p {
+.about-right p {
   font-size: 1rem;
   line-height: 1.5;
- }
+}
 
- .about-right a img {
+.about-right a img {
   max-width: 2.5rem;
- }
+}
 
- .about-right a {
+.about-right a {
   display: flex;
   width: 11rem;
- }
+}
 
- .exp-table {
-    width: 992px;
-    max-width: 992px;
-    font-size: 1.5rem;
- }
+ /* Experiences */
+.exp-table {
+  width: 992px;
+  max-width: 992px;
+  font-size: 1.5rem;
+}
 
- .exp-table th {
+.exp-table th {
   padding: .6rem;
   border-bottom: 2px solid var(--table-border);
   text-align: left;
- }
+}
  
- .exp-table td {
-   padding: .9rem;
-   border-bottom: 2px solid var(--table-border);
-   font-size: 1.2rem;
- }
+.exp-table td {
+  padding: .9rem;
+  border-bottom: 2px solid var(--table-border);
+  font-size: 1.2rem;
+}
 
- .tags-container {
+.summary-item:before {
+  content: "\2010";
+  margin-right: 1rem;
+}
+
+.platforms {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.platform-text {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/**************************************************/
+
+/* Volunteer */
+.volunteer-table {
+  width: 992px;
+  max-width: 992px;
+  font-size: 1.5rem;
+}
+
+.volunteer-table th {
+  padding: .6rem;
+  border-bottom: 2px solid var(--table-border);
+  text-align: left;
+}
+ 
+.volunteer-table td {
+  padding: .9rem;
+  border-bottom: 2px solid var(--table-border);
+  font-size: 1.2rem;
+}
+
+.tags-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
+  gap: .5rem;
   flex-wrap: wrap;
-  margin-top: 1rem;
-  font-size: .6em;
- }
+  font-size: .7em;
+}
 
- .tag {
+.tag {
   border-radius: var(--full-radius);
-  border: var(--border-thickness) var(--border-style) var(--table-border);
-  padding: .2em .5em;
-  background-color: #f1faee;
- }
+  padding: .4em .7em;
+  background-color: #faecd8;
+  color: #e6a23c;
+  /* background-color: #d9ecff;
+  color: #409eff; */
+  /* background-color: #e9e9eb;
+  color: #909399; */
+  /* background-color: #fde2e2;
+  color: #f56c6c; */
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+ /**************************************************/
 
 @media screen and (max-width: 768px) {
   div[class*="size-controller"] {
@@ -624,17 +669,6 @@ footer .socials a img {
   .hero-status {
     align-items: center;
   }
-
-  /* .about-right p {
-    max-width: 80%;
-  }*/
-
-  section:not(#hero) {
-    height: 100svh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   
   .reads-content {
     width: 100svw;
@@ -646,6 +680,9 @@ footer .socials a img {
     max-width: 100svw;
   }
 
+  .platforms {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1124px) {
@@ -690,5 +727,9 @@ footer .socials a img {
 
   .jokes-content {
     flex-direction: column;
+  }
+
+  .about-right p {
+    max-width: 26rem;
   }
 }
