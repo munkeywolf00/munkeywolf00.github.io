@@ -87,13 +87,6 @@ div[class*="size-controller"] {
   max-width: 1440px;
 }
 
-/* section:not(#hero) {
-  height: 100svh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 .btn {
   outline: none;
   background-color: white;
@@ -109,6 +102,11 @@ div[class*="size-controller"] {
   padding: .4em .8em;
   cursor: pointer;
 }
+
+.btn-about {
+  max-width: 155px;
+}
+
 /* 
 .btn.btn-about img svg{
   position: absolute;
@@ -300,6 +298,12 @@ caption {
   align-items: center;
   justify-content: space-between;
   gap: 5rem;
+}
+
+.hero-status {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .hero-left {
@@ -561,6 +565,10 @@ caption {
     max-height: unset;
   }
 
+  .asset {
+    font-size: 1rem;
+  }
+
   .self-taught-links {
     flex-direction: column;
     align-items: flex-start;
@@ -579,6 +587,68 @@ caption {
   .about-right {
     align-items: center;
     text-align: center;
+    padding: 0 10px;
   }
 
+  .hero-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-status {
+    align-items: center;
+  }
+
+  /* .about-right p {
+    max-width: 80%;
+  }*/
+
+  section:not(#hero) {
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1124px) {
+  .hero-container {
+    align-items: flex-start;
+  }
+
+  .hero {
+    padding: 2rem;
+    flex-direction: column-reverse;
+  }
+
+  .hero-left {
+    flex-direction: row;
+    max-width: 60rem;
+    width: unset;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  .hero-name {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 250px;
+    flex-direction: column;
+  }
+
+  .hero-status {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-left h6 {
+    max-width: 80%;
+  }
+
+  .hero {
+    gap: 1rem;
+  }
 }
