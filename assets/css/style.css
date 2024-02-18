@@ -351,6 +351,14 @@ footer .socials a img {
 }
 
 /* Stacks */
+.stack img {
+  transition: transform 0.2s ease-in-out 0s;
+}
+
+.stack:hover img {
+  transform: scale(1.125);
+}
+
 .stacks-table {
   width: 992px;
   max-width: 992px;
