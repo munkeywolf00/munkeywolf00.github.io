@@ -441,7 +441,7 @@
             <div class="footer-size-controller">
                 <div class="footer-main">
                     <div class="footer-content">
-                        <span><script>document.write(new Date().getFullYear())</script> &copy; All rights reserved</span>
+                        <span><span id="currentYear"></span> &copy; All rights reserved</span>
                         <div class="socials">
                             <a href="https://www.linkedin.com/in/davidvancativo/" target="_blank">
                                 <img alt="LinkedIn" src="./assets/icons/linkedin.svg">
@@ -456,4 +456,7 @@
         </div>
     </footer>
 </body>
+<script type="text/javascript" defer>
+    document.getElementById("currentYear").innerHTML = new Date().getFullYear()
+</script>
 </html>
