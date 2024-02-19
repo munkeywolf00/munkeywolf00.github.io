@@ -555,14 +555,16 @@ footer .socials a img {
 .tag {
   border-radius: var(--full-radius);
   padding: .4em .7em;
-  background-color: #faecd8;
-  color: #e6a23c;
+  /* background-color: #faecd8;
+  color: #e6a23c; */
   /* background-color: #d9ecff;
   color: #409eff; */
   /* background-color: #e9e9eb;
   color: #909399; */
   /* background-color: #fde2e2;
   color: #f56c6c; */
+  background-color: #808;
+  color: white;
   font-weight: bold;
   letter-spacing: .1em;
 }
