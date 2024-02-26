@@ -269,7 +269,7 @@ caption {
 .hero-left {
   max-width: 480px;
   width: 480px;
-  color: #202124;
+  color: var(--table-font-color);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
